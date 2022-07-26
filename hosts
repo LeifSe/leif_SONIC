@@ -1,0 +1,20 @@
+leif-SPINE-1 ansible_host=192.168.1.20
+leif-LEAF-1 ansible_host=192.168.1.22
+leif-SPINE-2 ansible_host=192.168.1.21
+leif-LEAF-2 ansible_host=192.168.1.23
+leif-LEAF-3 ansible_host=192.168.1.24
+leif-LEAF-4 ansible_host=192.168.1.25
+
+[spine]
+leif-SPINE-1
+leif-SPINE-2
+
+[leaf]
+leif-LEAF-1
+leif-LEAF-2
+leif-LEAF-3
+leif-LEAF-4
+
+[leif:children]
+spine
+leaf
